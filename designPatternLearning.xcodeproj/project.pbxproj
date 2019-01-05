@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043D098721E08C0200235CED /* ExportHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D098621E08C0200235CED /* ExportHeaderModel.m */; };
+		043D098A21E08C7600235CED /* ExportDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D098921E08C7600235CED /* ExportDataModel.m */; };
+		043D098D21E08CBF00235CED /* ExportFooterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D098C21E08CBF00235CED /* ExportFooterModel.m */; };
+		043D099021E0928A00235CED /* TxtBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D098F21E0928A00235CED /* TxtBuilder.m */; };
 		817C494F21DF0F5E00FDBF6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C494E21DF0F5E00FDBF6C /* AppDelegate.m */; };
 		817C495221DF0F5E00FDBF6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C495121DF0F5E00FDBF6C /* ViewController.m */; };
 		817C495521DF0F5E00FDBF6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817C495321DF0F5E00FDBF6C /* Main.storyboard */; };
@@ -16,6 +20,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043D098421E08A6E00235CED /* Builder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Builder.h; sourceTree = "<group>"; };
+		043D098521E08C0200235CED /* ExportHeaderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExportHeaderModel.h; sourceTree = "<group>"; };
+		043D098621E08C0200235CED /* ExportHeaderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExportHeaderModel.m; sourceTree = "<group>"; };
+		043D098821E08C7600235CED /* ExportDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExportDataModel.h; sourceTree = "<group>"; };
+		043D098921E08C7600235CED /* ExportDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExportDataModel.m; sourceTree = "<group>"; };
+		043D098B21E08CBF00235CED /* ExportFooterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExportFooterModel.h; sourceTree = "<group>"; };
+		043D098C21E08CBF00235CED /* ExportFooterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExportFooterModel.m; sourceTree = "<group>"; };
+		043D098E21E0928A00235CED /* TxtBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TxtBuilder.h; sourceTree = "<group>"; };
+		043D098F21E0928A00235CED /* TxtBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TxtBuilder.m; sourceTree = "<group>"; };
 		817C494A21DF0F5E00FDBF6C /* designPatternLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = designPatternLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		817C494D21DF0F5E00FDBF6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		817C494E21DF0F5E00FDBF6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +52,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043D098321E08A5600235CED /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				043D098421E08A6E00235CED /* Builder.h */,
+				043D098521E08C0200235CED /* ExportHeaderModel.h */,
+				043D098621E08C0200235CED /* ExportHeaderModel.m */,
+				043D098821E08C7600235CED /* ExportDataModel.h */,
+				043D098921E08C7600235CED /* ExportDataModel.m */,
+				043D098B21E08CBF00235CED /* ExportFooterModel.h */,
+				043D098C21E08CBF00235CED /* ExportFooterModel.m */,
+				043D098E21E0928A00235CED /* TxtBuilder.h */,
+				043D098F21E0928A00235CED /* TxtBuilder.m */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		817C494121DF0F5E00FDBF6C = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +87,7 @@
 		817C494C21DF0F5E00FDBF6C /* designPatternLearning */ = {
 			isa = PBXGroup;
 			children = (
+				043D098321E08A5600235CED /* Builder */,
 				817C494D21DF0F5E00FDBF6C /* AppDelegate.h */,
 				817C494E21DF0F5E00FDBF6C /* AppDelegate.m */,
 				817C495021DF0F5E00FDBF6C /* ViewController.h */,
@@ -143,6 +173,10 @@
 			files = (
 				817C495221DF0F5E00FDBF6C /* ViewController.m in Sources */,
 				817C495D21DF0F6000FDBF6C /* main.m in Sources */,
+				043D098D21E08CBF00235CED /* ExportFooterModel.m in Sources */,
+				043D098A21E08C7600235CED /* ExportDataModel.m in Sources */,
+				043D099021E0928A00235CED /* TxtBuilder.m in Sources */,
+				043D098721E08C0200235CED /* ExportHeaderModel.m in Sources */,
 				817C494F21DF0F5E00FDBF6C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
