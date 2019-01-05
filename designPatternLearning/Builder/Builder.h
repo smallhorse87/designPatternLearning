@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) buildFooter:(ExportFooterModel*) efm;
 
+- (NSMutableString*) getResult;
+
 @end
 
 NS_ASSUME_NONNULL_END

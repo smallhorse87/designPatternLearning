@@ -1,5 +1,5 @@
 //
-//  TxtBuilder.h
+//  Director.h
 //  designPatternLearning
 //
 //  Created by mac on 2019/1/5.
@@ -12,7 +12,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TxtBuilder : NSObject<Builder>
+@interface Director : NSObject
+
+@property (nonatomic, strong) id<Builder> builder;
+
+- (void) construct:(ExportHeaderModel*)ehm
+              data:(NSDictionary*)mapData
+            footer:(ExportFooterModel*)efm;
 
 @end
 

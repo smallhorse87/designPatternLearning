@@ -1,5 +1,5 @@
 //
-//  TxtBuilder.h
+//  XmlBuilder.h
 //  designPatternLearning
 //
 //  Created by mac on 2019/1/5.
@@ -8,11 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "Builder.h"
-
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TxtBuilder : NSObject<Builder>
+@interface XmlBuilder : NSObject
 
 @end
 
