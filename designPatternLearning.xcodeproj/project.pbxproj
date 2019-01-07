@@ -13,6 +13,13 @@
 		817C495721DF0F6000FDBF6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817C495621DF0F6000FDBF6C /* Assets.xcassets */; };
 		817C495A21DF0F6000FDBF6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817C495821DF0F6000FDBF6C /* LaunchScreen.storyboard */; };
 		817C495D21DF0F6000FDBF6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C495C21DF0F6000FDBF6C /* main.m */; };
+		817C496721DF101B00FDBF6C /* DirtyWordApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C496621DF101B00FDBF6C /* DirtyWordApi.m */; };
+		817C496B21DF209B00FDBF6C /* ReadingPoem.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C496A21DF209B00FDBF6C /* ReadingPoem.m */; };
+		817C496E21DF210000FDBF6C /* SimpleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C496D21DF210000FDBF6C /* SimpleFactory.m */; };
+		817C497721DF2A7600FDBF6C /* ExportTxtFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C497621DF2A7600FDBF6C /* ExportTxtFile.m */; };
+		817C497A21DF2B0600FDBF6C /* ExportDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C497921DF2B0600FDBF6C /* ExportDB.m */; };
+		817C498321DF353A00FDBF6C /* ExportOperate.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C498221DF353A00FDBF6C /* ExportOperate.m */; };
+		817C498621DF368300FDBF6C /* ExportTxtFileOperate.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C498521DF368300FDBF6C /* ExportTxtFileOperate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,22 @@
 		817C495921DF0F6000FDBF6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		817C495B21DF0F6000FDBF6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		817C495C21DF0F6000FDBF6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		817C496321DF0F8E00FDBF6C /* Api.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Api.h; sourceTree = "<group>"; };
+		817C496521DF101B00FDBF6C /* DirtyWordApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirtyWordApi.h; sourceTree = "<group>"; };
+		817C496621DF101B00FDBF6C /* DirtyWordApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirtyWordApi.m; sourceTree = "<group>"; };
+		817C496921DF209B00FDBF6C /* ReadingPoem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadingPoem.h; sourceTree = "<group>"; };
+		817C496A21DF209B00FDBF6C /* ReadingPoem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadingPoem.m; sourceTree = "<group>"; };
+		817C496C21DF210000FDBF6C /* SimpleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleFactory.h; sourceTree = "<group>"; };
+		817C496D21DF210000FDBF6C /* SimpleFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleFactory.m; sourceTree = "<group>"; };
+		817C497021DF283100FDBF6C /* ExportFileApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExportFileApi.h; sourceTree = "<group>"; };
+		817C497521DF2A7600FDBF6C /* ExportTxtFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExportTxtFile.h; sourceTree = "<group>"; };
+		817C497621DF2A7600FDBF6C /* ExportTxtFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExportTxtFile.m; sourceTree = "<group>"; };
+		817C497821DF2B0600FDBF6C /* ExportDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExportDB.h; sourceTree = "<group>"; };
+		817C497921DF2B0600FDBF6C /* ExportDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExportDB.m; sourceTree = "<group>"; };
+		817C498121DF353A00FDBF6C /* ExportOperate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExportOperate.h; sourceTree = "<group>"; };
+		817C498221DF353A00FDBF6C /* ExportOperate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExportOperate.m; sourceTree = "<group>"; };
+		817C498421DF368300FDBF6C /* ExportTxtFileOperate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExportTxtFileOperate.h; sourceTree = "<group>"; };
+		817C498521DF368300FDBF6C /* ExportTxtFileOperate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExportTxtFileOperate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,8 @@
 		817C494C21DF0F5E00FDBF6C /* designPatternLearning */ = {
 			isa = PBXGroup;
 			children = (
+				817C496F21DF281200FDBF6C /* FactoryMethod */,
+				817C496821DF206D00FDBF6C /* SimpleFactory */,
 				817C494D21DF0F5E00FDBF6C /* AppDelegate.h */,
 				817C494E21DF0F5E00FDBF6C /* AppDelegate.m */,
 				817C495021DF0F5E00FDBF6C /* ViewController.h */,
@@ -69,6 +94,36 @@
 				817C495C21DF0F6000FDBF6C /* main.m */,
 			);
 			path = designPatternLearning;
+			sourceTree = "<group>";
+		};
+		817C496821DF206D00FDBF6C /* SimpleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				817C496321DF0F8E00FDBF6C /* Api.h */,
+				817C496521DF101B00FDBF6C /* DirtyWordApi.h */,
+				817C496621DF101B00FDBF6C /* DirtyWordApi.m */,
+				817C496921DF209B00FDBF6C /* ReadingPoem.h */,
+				817C496A21DF209B00FDBF6C /* ReadingPoem.m */,
+				817C496C21DF210000FDBF6C /* SimpleFactory.h */,
+				817C496D21DF210000FDBF6C /* SimpleFactory.m */,
+			);
+			path = SimpleFactory;
+			sourceTree = "<group>";
+		};
+		817C496F21DF281200FDBF6C /* FactoryMethod */ = {
+			isa = PBXGroup;
+			children = (
+				817C497021DF283100FDBF6C /* ExportFileApi.h */,
+				817C497521DF2A7600FDBF6C /* ExportTxtFile.h */,
+				817C497621DF2A7600FDBF6C /* ExportTxtFile.m */,
+				817C497821DF2B0600FDBF6C /* ExportDB.h */,
+				817C497921DF2B0600FDBF6C /* ExportDB.m */,
+				817C498121DF353A00FDBF6C /* ExportOperate.h */,
+				817C498221DF353A00FDBF6C /* ExportOperate.m */,
+				817C498421DF368300FDBF6C /* ExportTxtFileOperate.h */,
+				817C498521DF368300FDBF6C /* ExportTxtFileOperate.m */,
+			);
+			path = FactoryMethod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +196,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817C496B21DF209B00FDBF6C /* ReadingPoem.m in Sources */,
+				817C498621DF368300FDBF6C /* ExportTxtFileOperate.m in Sources */,
+				817C497721DF2A7600FDBF6C /* ExportTxtFile.m in Sources */,
+				817C498321DF353A00FDBF6C /* ExportOperate.m in Sources */,
 				817C495221DF0F5E00FDBF6C /* ViewController.m in Sources */,
+				817C496E21DF210000FDBF6C /* SimpleFactory.m in Sources */,
 				817C495D21DF0F6000FDBF6C /* main.m in Sources */,
+				817C497A21DF2B0600FDBF6C /* ExportDB.m in Sources */,
 				817C494F21DF0F5E00FDBF6C /* AppDelegate.m in Sources */,
+				817C496721DF101B00FDBF6C /* DirtyWordApi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
