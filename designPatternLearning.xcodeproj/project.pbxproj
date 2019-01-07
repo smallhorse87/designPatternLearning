@@ -26,6 +26,10 @@
 		817C498321DF353A00FDBF6C /* ExportOperate.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C498221DF353A00FDBF6C /* ExportOperate.m */; };
 		817C498621DF368300FDBF6C /* ExportTxtFileOperate.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C498521DF368300FDBF6C /* ExportTxtFileOperate.m */; };
 		81A4E46221E2E72300F8AFB7 /* TxtBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E46021E2E72300F8AFB7 /* TxtBuilder.m */; };
+		81A4E46921E2EE2000F8AFB7 /* IntelCPU.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E46821E2EE2000F8AFB7 /* IntelCPU.m */; };
+		81A4E46C21E2EEFC00F8AFB7 /* GAMainboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E46B21E2EEFC00F8AFB7 /* GAMainboard.m */; };
+		81A4E46F21E2F01500F8AFB7 /* Schema1.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E46E21E2F01500F8AFB7 /* Schema1.m */; };
+		81A4E47221E2F14B00F8AFB7 /* ComputerEngineer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E47121E2F14B00F8AFB7 /* ComputerEngineer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +72,17 @@
 		817C498521DF368300FDBF6C /* ExportTxtFileOperate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExportTxtFileOperate.m; sourceTree = "<group>"; };
 		81A4E46021E2E72300F8AFB7 /* TxtBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TxtBuilder.m; sourceTree = "<group>"; };
 		81A4E46121E2E72300F8AFB7 /* TxtBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TxtBuilder.h; sourceTree = "<group>"; };
+		81A4E46421E2ED6200F8AFB7 /* AbstractFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractFactory.h; sourceTree = "<group>"; };
+		81A4E46521E2EDB700F8AFB7 /* CPUApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPUApi.h; sourceTree = "<group>"; };
+		81A4E46621E2EDEE00F8AFB7 /* MainboardApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainboardApi.h; sourceTree = "<group>"; };
+		81A4E46721E2EE2000F8AFB7 /* IntelCPU.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntelCPU.h; sourceTree = "<group>"; };
+		81A4E46821E2EE2000F8AFB7 /* IntelCPU.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntelCPU.m; sourceTree = "<group>"; };
+		81A4E46A21E2EEFC00F8AFB7 /* GAMainboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAMainboard.h; sourceTree = "<group>"; };
+		81A4E46B21E2EEFC00F8AFB7 /* GAMainboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAMainboard.m; sourceTree = "<group>"; };
+		81A4E46D21E2F01500F8AFB7 /* Schema1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Schema1.h; sourceTree = "<group>"; };
+		81A4E46E21E2F01500F8AFB7 /* Schema1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Schema1.m; sourceTree = "<group>"; };
+		81A4E47021E2F14B00F8AFB7 /* ComputerEngineer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComputerEngineer.h; sourceTree = "<group>"; };
+		81A4E47121E2F14B00F8AFB7 /* ComputerEngineer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComputerEngineer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +135,7 @@
 		817C494C21DF0F5E00FDBF6C /* designPatternLearning */ = {
 			isa = PBXGroup;
 			children = (
+				81A4E46321E2ED3600F8AFB7 /* AbstractFactory */,
 				817C496F21DF281200FDBF6C /* FactoryMethod */,
 				817C496821DF206D00FDBF6C /* SimpleFactory */,
 				043D098321E08A5600235CED /* Builder */,
@@ -164,6 +180,24 @@
 				817C498521DF368300FDBF6C /* ExportTxtFileOperate.m */,
 			);
 			path = FactoryMethod;
+			sourceTree = "<group>";
+		};
+		81A4E46321E2ED3600F8AFB7 /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				81A4E46421E2ED6200F8AFB7 /* AbstractFactory.h */,
+				81A4E46521E2EDB700F8AFB7 /* CPUApi.h */,
+				81A4E46621E2EDEE00F8AFB7 /* MainboardApi.h */,
+				81A4E46721E2EE2000F8AFB7 /* IntelCPU.h */,
+				81A4E46821E2EE2000F8AFB7 /* IntelCPU.m */,
+				81A4E46A21E2EEFC00F8AFB7 /* GAMainboard.h */,
+				81A4E46B21E2EEFC00F8AFB7 /* GAMainboard.m */,
+				81A4E46D21E2F01500F8AFB7 /* Schema1.h */,
+				81A4E46E21E2F01500F8AFB7 /* Schema1.m */,
+				81A4E47021E2F14B00F8AFB7 /* ComputerEngineer.h */,
+				81A4E47121E2F14B00F8AFB7 /* ComputerEngineer.m */,
+			);
+			path = AbstractFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				817C496B21DF209B00FDBF6C /* ReadingPoem.m in Sources */,
+				81A4E47221E2F14B00F8AFB7 /* ComputerEngineer.m in Sources */,
 				817C498621DF368300FDBF6C /* ExportTxtFileOperate.m in Sources */,
 				817C497721DF2A7600FDBF6C /* ExportTxtFile.m in Sources */,
 				817C498321DF353A00FDBF6C /* ExportOperate.m in Sources */,
@@ -248,9 +283,12 @@
 				043D098A21E08C7600235CED /* ExportDataModel.m in Sources */,
 				043D099621E0D57900235CED /* Director.m in Sources */,
 				043D098721E08C0200235CED /* ExportHeaderModel.m in Sources */,
+				81A4E46F21E2F01500F8AFB7 /* Schema1.m in Sources */,
 				817C494F21DF0F5E00FDBF6C /* AppDelegate.m in Sources */,
 				817C496721DF101B00FDBF6C /* DirtyWordApi.m in Sources */,
 				81A4E46221E2E72300F8AFB7 /* TxtBuilder.m in Sources */,
+				81A4E46C21E2EEFC00F8AFB7 /* GAMainboard.m in Sources */,
+				81A4E46921E2EE2000F8AFB7 /* IntelCPU.m in Sources */,
 				043D099321E0D4B400235CED /* XmlBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

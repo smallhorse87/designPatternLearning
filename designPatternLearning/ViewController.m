@@ -10,6 +10,9 @@
 
 #import "SimpleFactory.h"
 
+#import "Schema1.h"
+#import "ComputerEngineer.h"
+
 #import "ExportTxtFileOperate.h"
 #import "TxtBuilder.h"
 #import "Director.h"
@@ -55,8 +58,10 @@
     //桥接模式
 
     //享元模式
+    //UITableViewCell就是一种享元的使用
 
     //组合模式
+    //太简单了，略
 }
 
 - (void)behaviorPatterns
@@ -111,11 +116,13 @@
     ExportOperate *operate = [[ExportTxtFileOperate alloc] init];
     [operate export:@"测试数据"];
     
-    //抽象工厂模式：
-    
-    
+    //抽象工厂模式：提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。
+    //本质：选择产品簇的实现
+    Schema1 *schema1 = [[Schema1 alloc] init];
+    [[[ComputerEngineer alloc] init] makeComputer:schema1];
+
     //生成器：将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。
-    //核心：分离整体构建算法和部件构造
+    //本质：分离整体构建算法和部件构造
     ExportHeaderModel *ehm = [[ExportHeaderModel alloc] init];
     ehm.depId = @"一分公司";
     ehm.exportDate = @"2018-05-18";
