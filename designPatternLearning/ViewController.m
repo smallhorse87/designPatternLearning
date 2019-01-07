@@ -17,6 +17,8 @@
 #import "TxtBuilder.h"
 #import "Director.h"
 
+#import "Facade.h"
+
 @interface ViewController ()
 
 @end
@@ -48,8 +50,14 @@
 - (void)structurePatterns
 {
     //适配器模式
+    //这个太简单了，略
 
-    //外观模式
+    //外观模式：为子系统中的一组接口提供一个一致的界面，Facade模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。
+    //本质：封装交互，简化调用。
+    NSLog(@"示例开始\n 外观模式");
+    Facade *facade = [[Facade alloc] init];
+    [facade test];
+    NSLog(@"示例开始\n");
 
     //装饰模式
 
@@ -85,7 +93,7 @@
     //KVO就是观察者模式
     
     //状态模式
-    //这在后端中用的最多
+    //这在后端中用的最多，比方订单状态和处理
     
     //策略模式
     
@@ -118,8 +126,10 @@
     
     //抽象工厂模式：提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。
     //本质：选择产品簇的实现
+    NSLog(@"示例开始\n 抽象工厂模式");
     Schema1 *schema1 = [[Schema1 alloc] init];
     [[[ComputerEngineer alloc] init] makeComputer:schema1];
+    NSLog(@"示例结束\n");
 
     //生成器：将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。
     //本质：分离整体构建算法和部件构造

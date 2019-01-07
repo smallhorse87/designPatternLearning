@@ -30,6 +30,9 @@
 		81A4E46C21E2EEFC00F8AFB7 /* GAMainboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E46B21E2EEFC00F8AFB7 /* GAMainboard.m */; };
 		81A4E46F21E2F01500F8AFB7 /* Schema1.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E46E21E2F01500F8AFB7 /* Schema1.m */; };
 		81A4E47221E2F14B00F8AFB7 /* ComputerEngineer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E47121E2F14B00F8AFB7 /* ComputerEngineer.m */; };
+		81A4E47721E317F300F8AFB7 /* AModuleImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E47621E317F300F8AFB7 /* AModuleImpl.m */; };
+		81A4E47B21E3187300F8AFB7 /* BModuleImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E47921E3187300F8AFB7 /* BModuleImpl.m */; };
+		81A4E47E21E318CD00F8AFB7 /* Facade.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E47D21E318CD00F8AFB7 /* Facade.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +86,14 @@
 		81A4E46E21E2F01500F8AFB7 /* Schema1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Schema1.m; sourceTree = "<group>"; };
 		81A4E47021E2F14B00F8AFB7 /* ComputerEngineer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComputerEngineer.h; sourceTree = "<group>"; };
 		81A4E47121E2F14B00F8AFB7 /* ComputerEngineer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComputerEngineer.m; sourceTree = "<group>"; };
+		81A4E47421E317C600F8AFB7 /* AModuleApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AModuleApi.h; sourceTree = "<group>"; };
+		81A4E47521E317F300F8AFB7 /* AModuleImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AModuleImpl.h; sourceTree = "<group>"; };
+		81A4E47621E317F300F8AFB7 /* AModuleImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AModuleImpl.m; sourceTree = "<group>"; };
+		81A4E47821E3187300F8AFB7 /* BModuleImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BModuleImpl.h; sourceTree = "<group>"; };
+		81A4E47921E3187300F8AFB7 /* BModuleImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BModuleImpl.m; sourceTree = "<group>"; };
+		81A4E47A21E3187300F8AFB7 /* BModuleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BModuleApi.h; sourceTree = "<group>"; };
+		81A4E47C21E318CD00F8AFB7 /* Facade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Facade.h; sourceTree = "<group>"; };
+		81A4E47D21E318CD00F8AFB7 /* Facade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Facade.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +146,7 @@
 		817C494C21DF0F5E00FDBF6C /* designPatternLearning */ = {
 			isa = PBXGroup;
 			children = (
+				81A4E47321E3168F00F8AFB7 /* Facade */,
 				81A4E46321E2ED3600F8AFB7 /* AbstractFactory */,
 				817C496F21DF281200FDBF6C /* FactoryMethod */,
 				817C496821DF206D00FDBF6C /* SimpleFactory */,
@@ -198,6 +210,21 @@
 				81A4E47121E2F14B00F8AFB7 /* ComputerEngineer.m */,
 			);
 			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		81A4E47321E3168F00F8AFB7 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				81A4E47A21E3187300F8AFB7 /* BModuleApi.h */,
+				81A4E47821E3187300F8AFB7 /* BModuleImpl.h */,
+				81A4E47921E3187300F8AFB7 /* BModuleImpl.m */,
+				81A4E47421E317C600F8AFB7 /* AModuleApi.h */,
+				81A4E47521E317F300F8AFB7 /* AModuleImpl.h */,
+				81A4E47621E317F300F8AFB7 /* AModuleImpl.m */,
+				81A4E47C21E318CD00F8AFB7 /* Facade.h */,
+				81A4E47D21E318CD00F8AFB7 /* Facade.m */,
+			);
+			path = Facade;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,14 +300,17 @@
 				817C496B21DF209B00FDBF6C /* ReadingPoem.m in Sources */,
 				81A4E47221E2F14B00F8AFB7 /* ComputerEngineer.m in Sources */,
 				817C498621DF368300FDBF6C /* ExportTxtFileOperate.m in Sources */,
+				81A4E47721E317F300F8AFB7 /* AModuleImpl.m in Sources */,
 				817C497721DF2A7600FDBF6C /* ExportTxtFile.m in Sources */,
 				817C498321DF353A00FDBF6C /* ExportOperate.m in Sources */,
 				817C495221DF0F5E00FDBF6C /* ViewController.m in Sources */,
 				817C496E21DF210000FDBF6C /* SimpleFactory.m in Sources */,
 				817C495D21DF0F6000FDBF6C /* main.m in Sources */,
 				817C497A21DF2B0600FDBF6C /* ExportDB.m in Sources */,
+				81A4E47E21E318CD00F8AFB7 /* Facade.m in Sources */,
 				043D098D21E08CBF00235CED /* ExportFooterModel.m in Sources */,
 				043D098A21E08C7600235CED /* ExportDataModel.m in Sources */,
+				81A4E47B21E3187300F8AFB7 /* BModuleImpl.m in Sources */,
 				043D099621E0D57900235CED /* Director.m in Sources */,
 				043D098721E08C0200235CED /* ExportHeaderModel.m in Sources */,
 				81A4E46F21E2F01500F8AFB7 /* Schema1.m in Sources */,

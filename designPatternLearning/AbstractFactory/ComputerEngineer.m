@@ -22,6 +22,10 @@
 -(void)makeComputer:(id<AbstractFactory>) schema
 {
     [self prepareHardwares:schema];
+    
+    [cpu calculate];
+
+    [mainboard installCPU];
 }
 
 -(void)prepareHardwares:(id<AbstractFactory>) schema
