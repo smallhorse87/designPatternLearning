@@ -33,6 +33,9 @@
 		81A4E47721E317F300F8AFB7 /* AModuleImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E47621E317F300F8AFB7 /* AModuleImpl.m */; };
 		81A4E47B21E3187300F8AFB7 /* BModuleImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E47921E3187300F8AFB7 /* BModuleImpl.m */; };
 		81A4E47E21E318CD00F8AFB7 /* Facade.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E47D21E318CD00F8AFB7 /* Facade.m */; };
+		81A4E48221E31BD300F8AFB7 /* UserModelApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E48121E31BD300F8AFB7 /* UserModelApi.m */; };
+		81A4E48521E31C4C00F8AFB7 /* Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E48421E31C4C00F8AFB7 /* Proxy.m */; };
+		81A4E48821E31C9200F8AFB7 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E48721E31C9200F8AFB7 /* UserModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +97,12 @@
 		81A4E47A21E3187300F8AFB7 /* BModuleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BModuleApi.h; sourceTree = "<group>"; };
 		81A4E47C21E318CD00F8AFB7 /* Facade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Facade.h; sourceTree = "<group>"; };
 		81A4E47D21E318CD00F8AFB7 /* Facade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Facade.m; sourceTree = "<group>"; };
+		81A4E48021E31BD300F8AFB7 /* UserModelApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModelApi.h; sourceTree = "<group>"; };
+		81A4E48121E31BD300F8AFB7 /* UserModelApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModelApi.m; sourceTree = "<group>"; };
+		81A4E48321E31C4C00F8AFB7 /* Proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Proxy.h; sourceTree = "<group>"; };
+		81A4E48421E31C4C00F8AFB7 /* Proxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Proxy.m; sourceTree = "<group>"; };
+		81A4E48621E31C9200F8AFB7 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		81A4E48721E31C9200F8AFB7 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +155,7 @@
 		817C494C21DF0F5E00FDBF6C /* designPatternLearning */ = {
 			isa = PBXGroup;
 			children = (
+				81A4E47F21E31B8800F8AFB7 /* Proxy */,
 				81A4E47321E3168F00F8AFB7 /* Facade */,
 				81A4E46321E2ED3600F8AFB7 /* AbstractFactory */,
 				817C496F21DF281200FDBF6C /* FactoryMethod */,
@@ -227,6 +237,19 @@
 			path = Facade;
 			sourceTree = "<group>";
 		};
+		81A4E47F21E31B8800F8AFB7 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				81A4E48021E31BD300F8AFB7 /* UserModelApi.h */,
+				81A4E48121E31BD300F8AFB7 /* UserModelApi.m */,
+				81A4E48321E31C4C00F8AFB7 /* Proxy.h */,
+				81A4E48421E31C4C00F8AFB7 /* Proxy.m */,
+				81A4E48621E31C9200F8AFB7 /* UserModel.h */,
+				81A4E48721E31C9200F8AFB7 /* UserModel.m */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,6 +328,7 @@
 				817C498321DF353A00FDBF6C /* ExportOperate.m in Sources */,
 				817C495221DF0F5E00FDBF6C /* ViewController.m in Sources */,
 				817C496E21DF210000FDBF6C /* SimpleFactory.m in Sources */,
+				81A4E48821E31C9200F8AFB7 /* UserModel.m in Sources */,
 				817C495D21DF0F6000FDBF6C /* main.m in Sources */,
 				817C497A21DF2B0600FDBF6C /* ExportDB.m in Sources */,
 				81A4E47E21E318CD00F8AFB7 /* Facade.m in Sources */,
@@ -313,9 +337,11 @@
 				81A4E47B21E3187300F8AFB7 /* BModuleImpl.m in Sources */,
 				043D099621E0D57900235CED /* Director.m in Sources */,
 				043D098721E08C0200235CED /* ExportHeaderModel.m in Sources */,
+				81A4E48521E31C4C00F8AFB7 /* Proxy.m in Sources */,
 				81A4E46F21E2F01500F8AFB7 /* Schema1.m in Sources */,
 				817C494F21DF0F5E00FDBF6C /* AppDelegate.m in Sources */,
 				817C496721DF101B00FDBF6C /* DirtyWordApi.m in Sources */,
+				81A4E48221E31BD300F8AFB7 /* UserModelApi.m in Sources */,
 				81A4E46221E2E72300F8AFB7 /* TxtBuilder.m in Sources */,
 				81A4E46C21E2EEFC00F8AFB7 /* GAMainboard.m in Sources */,
 				81A4E46921E2EE2000F8AFB7 /* IntelCPU.m in Sources */,

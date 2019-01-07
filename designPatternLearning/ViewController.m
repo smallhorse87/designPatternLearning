@@ -19,6 +19,9 @@
 
 #import "Facade.h"
 
+#import "Proxy.h"
+#import "UserModel.h"
+
 @interface ViewController ()
 
 @end
@@ -59,9 +62,16 @@
     [facade test];
     NSLog(@"示例开始\n");
 
-    //装饰模式
+    //代理模式：为其他对象提供一种代理以控制对这个对象的访问。
+    //本质：控制对象访问。
+    NSLog(@"示例开始\n 代理模式");
+    Proxy *proxy = [[Proxy alloc] initWithModel:[UserModel new]];
+    proxy.userId = @"007";
+    proxy.name   = @"James";
+    NSLog(@"所在部门：%@", proxy.depId);
+    NSLog(@"示例开始\n");
 
-    //代理模式
+    //装饰模式
 
     //桥接模式
 
