@@ -12,12 +12,17 @@
 
 +(double)mapMonthSaleMoney:(NSString*)user
 {
+    if([user isEqualToString:@"张三"])
+        return 1500;
+    else if([user isEqualToString:@"王五"])
+        return 2000;
+    
     return 1000;
 }
 
 +(NSArray*)mapMonthSaleMoneyValues
 {
-    return @[@(1000),@(2000),@(3000),];
+    return @[@(1000),@(1500),@(2000),];
 }
 
 @end

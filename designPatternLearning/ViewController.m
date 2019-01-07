@@ -82,10 +82,10 @@
     id<Component> c1 = [[ConcreteComponent alloc] init];
     Decorator *d1 = [[MonthPrizeDecorator alloc] initWithComponent:c1];
     Decorator *d2 = [[SumPrizeDecorator   alloc] initWithComponent:d1];
-
+    
     double zs = [d2 calcPrize:@"张三" begin:NULL end:NULL];
     NSLog(@"======张三应得奖金：%f",zs);
-    
+
     //如果是业务经理，还需要一个计算团队的奖金计算
     Decorator *d3 = [[GroupPrizeDecorator alloc] initWithComponent:d2];
     double ww = [d3 calcPrize:@"王五" begin:NULL end:NULL];

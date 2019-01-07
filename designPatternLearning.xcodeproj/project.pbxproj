@@ -273,6 +273,8 @@
 		81A4E48921E3247100F8AFB7 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
+				81A4E49421E32B7E00F8AFB7 /* TempDB.h */,
+				81A4E49521E32B7E00F8AFB7 /* TempDB.m */,
 				81A4E48A21E3259E00F8AFB7 /* Component.h */,
 				81A4E48B21E3260C00F8AFB7 /* ConcreteComponent.h */,
 				81A4E48C21E3260C00F8AFB7 /* ConcreteComponent.m */,
@@ -280,8 +282,6 @@
 				81A4E48F21E326B000F8AFB7 /* Decorator.m */,
 				81A4E49121E32A5D00F8AFB7 /* MonthPrizeDecorator.h */,
 				81A4E49221E32A5D00F8AFB7 /* MonthPrizeDecorator.m */,
-				81A4E49421E32B7E00F8AFB7 /* TempDB.h */,
-				81A4E49521E32B7E00F8AFB7 /* TempDB.m */,
 				81A4E49721E32C3A00F8AFB7 /* SumPrizeDecorator.h */,
 				81A4E49821E32C3A00F8AFB7 /* SumPrizeDecorator.m */,
 				81A4E49A21E32CC500F8AFB7 /* GroupPrizeDecorator.h */,
