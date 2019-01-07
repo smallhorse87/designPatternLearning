@@ -11,7 +11,7 @@
 #import "SimpleFactory.h"
 
 #import "ExportTxtFileOperate.h"
-#import "TxtBuilder.h"
+//#import "TxtBuilder.h"
 #import "Director.h"
 
 @interface ViewController ()
@@ -68,14 +68,14 @@
     ExportFooterModel *efm = [[ExportFooterModel alloc] init];
     efm.exportUser = @"张三";
     
-    TxtBuilder *txtBuilder = [[TxtBuilder alloc] init];
-    
-    Director *director = [[Director alloc] init];
-    director.builder = txtBuilder;
-    
-    [director construct:ehm data:mapData footer:efm];
-    
-    NSLog(@"\n输出文本文件的内容：\n%@",[txtBuilder getResult]);
+//    TxtBuilder *txtBuilder = [[TxtBuilder alloc] init];
+//    
+//    Director *director = [[Director alloc] init];
+//    director.builder = txtBuilder;
+//    
+//    [director construct:ehm data:mapData footer:efm];
+//    
+//    NSLog(@"\n输出文本文件的内容：\n%@",[txtBuilder getResult]);
 }
 
 @end
