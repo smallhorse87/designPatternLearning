@@ -36,6 +36,12 @@
 		81A4E48221E31BD300F8AFB7 /* UserModelApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E48121E31BD300F8AFB7 /* UserModelApi.m */; };
 		81A4E48521E31C4C00F8AFB7 /* Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E48421E31C4C00F8AFB7 /* Proxy.m */; };
 		81A4E48821E31C9200F8AFB7 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E48721E31C9200F8AFB7 /* UserModel.m */; };
+		81A4E48D21E3260C00F8AFB7 /* ConcreteComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E48C21E3260C00F8AFB7 /* ConcreteComponent.m */; };
+		81A4E49021E326B000F8AFB7 /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E48F21E326B000F8AFB7 /* Decorator.m */; };
+		81A4E49321E32A5D00F8AFB7 /* MonthPrizeDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E49221E32A5D00F8AFB7 /* MonthPrizeDecorator.m */; };
+		81A4E49621E32B7E00F8AFB7 /* TempDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E49521E32B7E00F8AFB7 /* TempDB.m */; };
+		81A4E49921E32C3A00F8AFB7 /* SumPrizeDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E49821E32C3A00F8AFB7 /* SumPrizeDecorator.m */; };
+		81A4E49C21E32CC500F8AFB7 /* GroupPrizeDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4E49B21E32CC500F8AFB7 /* GroupPrizeDecorator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +109,19 @@
 		81A4E48421E31C4C00F8AFB7 /* Proxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Proxy.m; sourceTree = "<group>"; };
 		81A4E48621E31C9200F8AFB7 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		81A4E48721E31C9200F8AFB7 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		81A4E48A21E3259E00F8AFB7 /* Component.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
+		81A4E48B21E3260C00F8AFB7 /* ConcreteComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteComponent.h; sourceTree = "<group>"; };
+		81A4E48C21E3260C00F8AFB7 /* ConcreteComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteComponent.m; sourceTree = "<group>"; };
+		81A4E48E21E326B000F8AFB7 /* Decorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Decorator.h; sourceTree = "<group>"; };
+		81A4E48F21E326B000F8AFB7 /* Decorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Decorator.m; sourceTree = "<group>"; };
+		81A4E49121E32A5D00F8AFB7 /* MonthPrizeDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonthPrizeDecorator.h; sourceTree = "<group>"; };
+		81A4E49221E32A5D00F8AFB7 /* MonthPrizeDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonthPrizeDecorator.m; sourceTree = "<group>"; };
+		81A4E49421E32B7E00F8AFB7 /* TempDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TempDB.h; sourceTree = "<group>"; };
+		81A4E49521E32B7E00F8AFB7 /* TempDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TempDB.m; sourceTree = "<group>"; };
+		81A4E49721E32C3A00F8AFB7 /* SumPrizeDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SumPrizeDecorator.h; sourceTree = "<group>"; };
+		81A4E49821E32C3A00F8AFB7 /* SumPrizeDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SumPrizeDecorator.m; sourceTree = "<group>"; };
+		81A4E49A21E32CC500F8AFB7 /* GroupPrizeDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupPrizeDecorator.h; sourceTree = "<group>"; };
+		81A4E49B21E32CC500F8AFB7 /* GroupPrizeDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupPrizeDecorator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +174,7 @@
 		817C494C21DF0F5E00FDBF6C /* designPatternLearning */ = {
 			isa = PBXGroup;
 			children = (
+				81A4E48921E3247100F8AFB7 /* Decorator */,
 				81A4E47F21E31B8800F8AFB7 /* Proxy */,
 				81A4E47321E3168F00F8AFB7 /* Facade */,
 				81A4E46321E2ED3600F8AFB7 /* AbstractFactory */,
@@ -250,6 +270,26 @@
 			path = Proxy;
 			sourceTree = "<group>";
 		};
+		81A4E48921E3247100F8AFB7 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				81A4E48A21E3259E00F8AFB7 /* Component.h */,
+				81A4E48B21E3260C00F8AFB7 /* ConcreteComponent.h */,
+				81A4E48C21E3260C00F8AFB7 /* ConcreteComponent.m */,
+				81A4E48E21E326B000F8AFB7 /* Decorator.h */,
+				81A4E48F21E326B000F8AFB7 /* Decorator.m */,
+				81A4E49121E32A5D00F8AFB7 /* MonthPrizeDecorator.h */,
+				81A4E49221E32A5D00F8AFB7 /* MonthPrizeDecorator.m */,
+				81A4E49421E32B7E00F8AFB7 /* TempDB.h */,
+				81A4E49521E32B7E00F8AFB7 /* TempDB.m */,
+				81A4E49721E32C3A00F8AFB7 /* SumPrizeDecorator.h */,
+				81A4E49821E32C3A00F8AFB7 /* SumPrizeDecorator.m */,
+				81A4E49A21E32CC500F8AFB7 /* GroupPrizeDecorator.h */,
+				81A4E49B21E32CC500F8AFB7 /* GroupPrizeDecorator.m */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,12 +361,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				817C496B21DF209B00FDBF6C /* ReadingPoem.m in Sources */,
+				81A4E49021E326B000F8AFB7 /* Decorator.m in Sources */,
 				81A4E47221E2F14B00F8AFB7 /* ComputerEngineer.m in Sources */,
 				817C498621DF368300FDBF6C /* ExportTxtFileOperate.m in Sources */,
+				81A4E49321E32A5D00F8AFB7 /* MonthPrizeDecorator.m in Sources */,
 				81A4E47721E317F300F8AFB7 /* AModuleImpl.m in Sources */,
 				817C497721DF2A7600FDBF6C /* ExportTxtFile.m in Sources */,
+				81A4E49621E32B7E00F8AFB7 /* TempDB.m in Sources */,
 				817C498321DF353A00FDBF6C /* ExportOperate.m in Sources */,
 				817C495221DF0F5E00FDBF6C /* ViewController.m in Sources */,
+				81A4E49C21E32CC500F8AFB7 /* GroupPrizeDecorator.m in Sources */,
 				817C496E21DF210000FDBF6C /* SimpleFactory.m in Sources */,
 				81A4E48821E31C9200F8AFB7 /* UserModel.m in Sources */,
 				817C495D21DF0F6000FDBF6C /* main.m in Sources */,
@@ -336,10 +380,12 @@
 				043D098A21E08C7600235CED /* ExportDataModel.m in Sources */,
 				81A4E47B21E3187300F8AFB7 /* BModuleImpl.m in Sources */,
 				043D099621E0D57900235CED /* Director.m in Sources */,
+				81A4E49921E32C3A00F8AFB7 /* SumPrizeDecorator.m in Sources */,
 				043D098721E08C0200235CED /* ExportHeaderModel.m in Sources */,
 				81A4E48521E31C4C00F8AFB7 /* Proxy.m in Sources */,
 				81A4E46F21E2F01500F8AFB7 /* Schema1.m in Sources */,
 				817C494F21DF0F5E00FDBF6C /* AppDelegate.m in Sources */,
+				81A4E48D21E3260C00F8AFB7 /* ConcreteComponent.m in Sources */,
 				817C496721DF101B00FDBF6C /* DirtyWordApi.m in Sources */,
 				81A4E48221E31BD300F8AFB7 /* UserModelApi.m in Sources */,
 				81A4E46221E2E72300F8AFB7 /* TxtBuilder.m in Sources */,

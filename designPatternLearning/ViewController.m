@@ -22,6 +22,11 @@
 #import "Proxy.h"
 #import "UserModel.h"
 
+#import "MonthPrizeDecorator.h"
+#import "SumPrizeDecorator.h"
+#import "GroupPrizeDecorator.h"
+#import "ConcreteComponent.h"
+
 @interface ViewController ()
 
 @end
@@ -71,7 +76,21 @@
     NSLog(@"所在部门：%@", proxy.depId);
     NSLog(@"示例开始\n");
 
-    //装饰模式
+    //装饰模式：动态地给一个对象添加一些额外的职责。就增加功能来说，装饰模式比生成子类更为灵活。
+    //本质：动态组合
+    NSLog(@"示例开始\n 装饰模式");
+    id<Component> c1 = [[ConcreteComponent alloc] init];
+    Decorator *d1 = [[MonthPrizeDecorator alloc] initWithComponent:c1];
+    Decorator *d2 = [[SumPrizeDecorator   alloc] initWithComponent:d1];
+
+    double zs = [d2 calcPrize:@"张三" begin:NULL end:NULL];
+    NSLog(@"======张三应得奖金：%f",zs);
+    
+    //如果是业务经理，还需要一个计算团队的奖金计算
+    Decorator *d3 = [[GroupPrizeDecorator alloc] initWithComponent:d2];
+    double ww = [d3 calcPrize:@"王五" begin:NULL end:NULL];
+    NSLog(@"======王五应得奖金：%f",ww);
+    NSLog(@"示例开始\n 装饰模式");
 
     //桥接模式
 
