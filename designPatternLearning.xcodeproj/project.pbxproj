@@ -12,6 +12,10 @@
 		043D098D21E08CBF00235CED /* ExportFooterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D098C21E08CBF00235CED /* ExportFooterModel.m */; };
 		043D099321E0D4B400235CED /* XmlBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D099221E0D4B400235CED /* XmlBuilder.m */; };
 		043D099621E0D57900235CED /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D099521E0D57900235CED /* Director.m */; };
+		812163EA21E4684D003EE2C1 /* GigaMainBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 812163E921E4684D003EE2C1 /* GigaMainBoard.m */; };
+		812163EE21E46936003EE2C1 /* OpenCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 812163ED21E46936003EE2C1 /* OpenCommand.m */; };
+		812163F121E46A11003EE2C1 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 812163F021E46A11003EE2C1 /* Box.m */; };
+		812163F421E476CF003EE2C1 /* ResetCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 812163F321E476CF003EE2C1 /* ResetCommand.m */; };
 		817C494F21DF0F5E00FDBF6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C494E21DF0F5E00FDBF6C /* AppDelegate.m */; };
 		817C495221DF0F5E00FDBF6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C495121DF0F5E00FDBF6C /* ViewController.m */; };
 		817C495521DF0F5E00FDBF6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817C495321DF0F5E00FDBF6C /* Main.storyboard */; };
@@ -56,6 +60,16 @@
 		043D099221E0D4B400235CED /* XmlBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XmlBuilder.m; sourceTree = "<group>"; };
 		043D099421E0D57900235CED /* Director.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
 		043D099521E0D57900235CED /* Director.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
+		812163E721E4681B003EE2C1 /* MainBoardApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainBoardApi.h; sourceTree = "<group>"; };
+		812163E821E4684D003EE2C1 /* GigaMainBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GigaMainBoard.h; sourceTree = "<group>"; };
+		812163E921E4684D003EE2C1 /* GigaMainBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GigaMainBoard.m; sourceTree = "<group>"; };
+		812163EB21E468E6003EE2C1 /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		812163EC21E46936003EE2C1 /* OpenCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCommand.h; sourceTree = "<group>"; };
+		812163ED21E46936003EE2C1 /* OpenCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCommand.m; sourceTree = "<group>"; };
+		812163EF21E46A11003EE2C1 /* Box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
+		812163F021E46A11003EE2C1 /* Box.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
+		812163F221E476CF003EE2C1 /* ResetCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResetCommand.h; sourceTree = "<group>"; };
+		812163F321E476CF003EE2C1 /* ResetCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResetCommand.m; sourceTree = "<group>"; };
 		817C494A21DF0F5E00FDBF6C /* designPatternLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = designPatternLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		817C494D21DF0F5E00FDBF6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		817C494E21DF0F5E00FDBF6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -155,6 +169,23 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		812163E621E467ED003EE2C1 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				812163E721E4681B003EE2C1 /* MainBoardApi.h */,
+				812163E821E4684D003EE2C1 /* GigaMainBoard.h */,
+				812163E921E4684D003EE2C1 /* GigaMainBoard.m */,
+				812163EB21E468E6003EE2C1 /* Command.h */,
+				812163EC21E46936003EE2C1 /* OpenCommand.h */,
+				812163ED21E46936003EE2C1 /* OpenCommand.m */,
+				812163F221E476CF003EE2C1 /* ResetCommand.h */,
+				812163F321E476CF003EE2C1 /* ResetCommand.m */,
+				812163EF21E46A11003EE2C1 /* Box.h */,
+				812163F021E46A11003EE2C1 /* Box.m */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
 		817C494121DF0F5E00FDBF6C = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +205,7 @@
 		817C494C21DF0F5E00FDBF6C /* designPatternLearning */ = {
 			isa = PBXGroup;
 			children = (
+				812163E621E467ED003EE2C1 /* Command */,
 				81A4E48921E3247100F8AFB7 /* Decorator */,
 				81A4E47F21E31B8800F8AFB7 /* Proxy */,
 				81A4E47321E3168F00F8AFB7 /* Facade */,
@@ -375,6 +407,7 @@
 				81A4E48821E31C9200F8AFB7 /* UserModel.m in Sources */,
 				817C495D21DF0F6000FDBF6C /* main.m in Sources */,
 				817C497A21DF2B0600FDBF6C /* ExportDB.m in Sources */,
+				812163F421E476CF003EE2C1 /* ResetCommand.m in Sources */,
 				81A4E47E21E318CD00F8AFB7 /* Facade.m in Sources */,
 				043D098D21E08CBF00235CED /* ExportFooterModel.m in Sources */,
 				043D098A21E08C7600235CED /* ExportDataModel.m in Sources */,
@@ -390,8 +423,11 @@
 				81A4E48221E31BD300F8AFB7 /* UserModelApi.m in Sources */,
 				81A4E46221E2E72300F8AFB7 /* TxtBuilder.m in Sources */,
 				81A4E46C21E2EEFC00F8AFB7 /* GAMainboard.m in Sources */,
+				812163F121E46A11003EE2C1 /* Box.m in Sources */,
 				81A4E46921E2EE2000F8AFB7 /* IntelCPU.m in Sources */,
+				812163EA21E4684D003EE2C1 /* GigaMainBoard.m in Sources */,
 				043D099321E0D4B400235CED /* XmlBuilder.m in Sources */,
+				812163EE21E46936003EE2C1 /* OpenCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

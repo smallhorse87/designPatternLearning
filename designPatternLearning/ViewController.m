@@ -27,6 +27,11 @@
 #import "GroupPrizeDecorator.h"
 #import "ConcreteComponent.h"
 
+#import "GigaMainBoard.h"
+#import "OpenCommand.h"
+#import "ResetCommand.h"
+#import "Box.h"
+
 @interface ViewController ()
 
 @end
@@ -103,10 +108,25 @@
 
 - (void)behaviorPatterns
 {
+    //命令模式
+    NSLog(@"示例开始\n 命令模式");
+    id<MainBoardApi> mainBoard    = [[GigaMainBoard alloc] init];
+    id<Command>      openCommand  = [[OpenCommand alloc] initWithMainBoardApi:mainBoard];
+    id<Command>      resetCommand = [[ResetCommand alloc] initWithMainBoardApi:mainBoard];
+    
+    Box *box = [[Box alloc] init];
+    box.openCommand  = openCommand;
+    box.resetCommand = resetCommand;
+
+    NSLog(@"按下开机按钮");
+    [box openButtonPressed];
+
+    NSLog(@"按下重启按钮");
+    [box openButtonPressed];
+    NSLog(@"示例结束\n 命令模式");
+
     //职责链模式
     //iOS上响应触摸动作的机制就是职责链模式
-    
-    //命令模式
     
     //解释器模式
     
