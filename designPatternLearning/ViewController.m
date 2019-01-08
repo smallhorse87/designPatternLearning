@@ -108,7 +108,9 @@
 
 - (void)behaviorPatterns
 {
-    //命令模式
+    //命令模式：将一个请求封装为一个对象，从而使你可用不同的请求对客户进行参数化，对请求排队或记录请求日志，以及支持可撤销的操作。
+    //优   点：更松散的耦合、更动态的控制、很自然的复合命令、更好的扩展性
+    //本   质：封装请求
     NSLog(@"示例开始\n 命令模式");
     id<MainBoardApi> mainBoard    = [[GigaMainBoard alloc] init];
     id<Command>      openCommand  = [[OpenCommand alloc] initWithMainBoardApi:mainBoard];
