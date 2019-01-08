@@ -32,6 +32,10 @@
 #import "ResetCommand.h"
 #import "Box.h"
 
+#import "LoginModel.h"
+#import "WorkerLogin.h"
+#import "NormalLogin.h"
+
 @interface ViewController ()
 
 @end
@@ -127,10 +131,33 @@
     [box openButtonPressed];
     NSLog(@"示例结束\n 命令模式");
 
+    //模板方法：定一个操作中的算法的骨架，而将一些步骤延迟到子类中。模板方法使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤。
+    //本   质：固定算法骨架。
+    //iOS中UIViewController就用到了模板方法
+    NSLog(@"示例开始\n 模板方法");
+    LoginModel *lm = [[LoginModel alloc] init];
+    lm.loginId = @"admin";
+    lm.pwd     = @"workerpwd";
+    
+    LoginTemplate *lt  = [[WorkerLogin alloc] init];
+    LoginTemplate *lt2 = [[NormalLogin alloc] init];
+    
+    BOOL flag  = [lt login:lm];
+    NSLog(@"可以登录工作平台=%@",flag?@"YES":@"NO");
+
+    BOOL flag2 = [lt2 login:lm];
+    NSLog(@"可以进行普通人员登录=%@",flag2?@"YES":@"NO");
+    NSLog(@"示例结束\n 模板方法");
+    //解释器模式
+    
+    //备忘录
+    
+    //策略模式
+    
+    //访问者模式
+
     //职责链模式
     //iOS上响应触摸动作的机制就是职责链模式
-    
-    //解释器模式
     
     //迭代器模式
     //NSArray，NSDictionary中就用到了
@@ -138,20 +165,12 @@
     //中介者模式
     //UINavigationController就是中介者
     
-    //备忘录
-    
     //观察者
     //KVO就是观察者模式
     
     //状态模式
     //这在后端中用的最多，比方订单状态和处理
     
-    //策略模式
-    
-    //模板方法
-    
-    //访问者模式
-
 }
 
 - (void)creationPatterns
