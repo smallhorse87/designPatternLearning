@@ -20,6 +20,10 @@
 		812163FB21E480D4003EE2C1 /* LoginTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 812163FA21E480D4003EE2C1 /* LoginTemplate.m */; };
 		812163FE21E482FF003EE2C1 /* NormalLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 812163FD21E482FF003EE2C1 /* NormalLogin.m */; };
 		8121640121E48374003EE2C1 /* WorkerLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8121640021E48374003EE2C1 /* WorkerLogin.m */; };
+		8150F3C121E5887400222A63 /* NormalCustomerStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3C021E5887400222A63 /* NormalCustomerStrategy.m */; };
+		8150F3C421E5890300222A63 /* OldCustomerStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3C321E5890300222A63 /* OldCustomerStrategy.m */; };
+		8150F3C721E58A3C00222A63 /* LargeCustomerStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3C621E58A3C00222A63 /* LargeCustomerStrategy.m */; };
+		8150F3CA21E58A7F00222A63 /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3C921E58A7F00222A63 /* Price.m */; };
 		817C494F21DF0F5E00FDBF6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C494E21DF0F5E00FDBF6C /* AppDelegate.m */; };
 		817C495221DF0F5E00FDBF6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C495121DF0F5E00FDBF6C /* ViewController.m */; };
 		817C495521DF0F5E00FDBF6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817C495321DF0F5E00FDBF6C /* Main.storyboard */; };
@@ -82,6 +86,15 @@
 		812163FD21E482FF003EE2C1 /* NormalLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalLogin.m; sourceTree = "<group>"; };
 		812163FF21E48374003EE2C1 /* WorkerLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkerLogin.h; sourceTree = "<group>"; };
 		8121640021E48374003EE2C1 /* WorkerLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkerLogin.m; sourceTree = "<group>"; };
+		8150F3BE21E5881E00222A63 /* Strategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strategy.h; sourceTree = "<group>"; };
+		8150F3BF21E5887400222A63 /* NormalCustomerStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalCustomerStrategy.h; sourceTree = "<group>"; };
+		8150F3C021E5887400222A63 /* NormalCustomerStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalCustomerStrategy.m; sourceTree = "<group>"; };
+		8150F3C221E5890300222A63 /* OldCustomerStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OldCustomerStrategy.h; sourceTree = "<group>"; };
+		8150F3C321E5890300222A63 /* OldCustomerStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OldCustomerStrategy.m; sourceTree = "<group>"; };
+		8150F3C521E58A3C00222A63 /* LargeCustomerStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LargeCustomerStrategy.h; sourceTree = "<group>"; };
+		8150F3C621E58A3C00222A63 /* LargeCustomerStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LargeCustomerStrategy.m; sourceTree = "<group>"; };
+		8150F3C821E58A7F00222A63 /* Price.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Price.h; sourceTree = "<group>"; };
+		8150F3C921E58A7F00222A63 /* Price.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
 		817C494A21DF0F5E00FDBF6C /* designPatternLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = designPatternLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		817C494D21DF0F5E00FDBF6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		817C494E21DF0F5E00FDBF6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -213,6 +226,22 @@
 			path = TemplateMethod;
 			sourceTree = "<group>";
 		};
+		8150F3BD21E587D400222A63 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				8150F3BE21E5881E00222A63 /* Strategy.h */,
+				8150F3BF21E5887400222A63 /* NormalCustomerStrategy.h */,
+				8150F3C021E5887400222A63 /* NormalCustomerStrategy.m */,
+				8150F3C221E5890300222A63 /* OldCustomerStrategy.h */,
+				8150F3C321E5890300222A63 /* OldCustomerStrategy.m */,
+				8150F3C521E58A3C00222A63 /* LargeCustomerStrategy.h */,
+				8150F3C621E58A3C00222A63 /* LargeCustomerStrategy.m */,
+				8150F3C821E58A7F00222A63 /* Price.h */,
+				8150F3C921E58A7F00222A63 /* Price.m */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
 		817C494121DF0F5E00FDBF6C = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +261,7 @@
 		817C494C21DF0F5E00FDBF6C /* designPatternLearning */ = {
 			isa = PBXGroup;
 			children = (
+				8150F3BD21E587D400222A63 /* Strategy */,
 				812163F521E48050003EE2C1 /* TemplateMethod */,
 				812163E621E467ED003EE2C1 /* Command */,
 				81A4E48921E3247100F8AFB7 /* Decorator */,
@@ -422,6 +452,7 @@
 			files = (
 				817C496B21DF209B00FDBF6C /* ReadingPoem.m in Sources */,
 				81A4E49021E326B000F8AFB7 /* Decorator.m in Sources */,
+				8150F3C421E5890300222A63 /* OldCustomerStrategy.m in Sources */,
 				81A4E47221E2F14B00F8AFB7 /* ComputerEngineer.m in Sources */,
 				8121640121E48374003EE2C1 /* WorkerLogin.m in Sources */,
 				817C498621DF368300FDBF6C /* ExportTxtFileOperate.m in Sources */,
@@ -435,6 +466,7 @@
 				81A4E49C21E32CC500F8AFB7 /* GroupPrizeDecorator.m in Sources */,
 				817C496E21DF210000FDBF6C /* SimpleFactory.m in Sources */,
 				81A4E48821E31C9200F8AFB7 /* UserModel.m in Sources */,
+				8150F3C721E58A3C00222A63 /* LargeCustomerStrategy.m in Sources */,
 				817C495D21DF0F6000FDBF6C /* main.m in Sources */,
 				817C497A21DF2B0600FDBF6C /* ExportDB.m in Sources */,
 				812163F421E476CF003EE2C1 /* ResetCommand.m in Sources */,
@@ -443,6 +475,7 @@
 				043D098A21E08C7600235CED /* ExportDataModel.m in Sources */,
 				81A4E47B21E3187300F8AFB7 /* BModuleImpl.m in Sources */,
 				043D099621E0D57900235CED /* Director.m in Sources */,
+				8150F3CA21E58A7F00222A63 /* Price.m in Sources */,
 				81A4E49921E32C3A00F8AFB7 /* SumPrizeDecorator.m in Sources */,
 				043D098721E08C0200235CED /* ExportHeaderModel.m in Sources */,
 				81A4E48521E31C4C00F8AFB7 /* Proxy.m in Sources */,
@@ -452,6 +485,7 @@
 				817C496721DF101B00FDBF6C /* DirtyWordApi.m in Sources */,
 				81A4E48221E31BD300F8AFB7 /* UserModelApi.m in Sources */,
 				81A4E46221E2E72300F8AFB7 /* TxtBuilder.m in Sources */,
+				8150F3C121E5887400222A63 /* NormalCustomerStrategy.m in Sources */,
 				81A4E46C21E2EEFC00F8AFB7 /* GAMainboard.m in Sources */,
 				812163F121E46A11003EE2C1 /* Box.m in Sources */,
 				81A4E46921E2EE2000F8AFB7 /* IntelCPU.m in Sources */,

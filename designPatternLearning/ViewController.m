@@ -36,6 +36,11 @@
 #import "WorkerLogin.h"
 #import "NormalLogin.h"
 
+#import "NormalCustomerStrategy.h"
+#import "OldCustomerStrategy.h"
+#import "LargeCustomerStrategy.h"
+#import "Price.h"
+
 @interface ViewController ()
 
 @end
@@ -148,11 +153,20 @@
     BOOL flag2 = [lt2 login:lm];
     NSLog(@"可以进行普通人员登录=%@",flag2?@"YES":@"NO");
     NSLog(@"示例结束\n 模板方法");
+
+    //策略模式：定义一系列的算法，把它们一个个封装起来，并且使它们可相互替换。本模式使得算法可独立于使用它的客户而变化。
+    //本质：分离算法，选择实现。
+    NSLog(@"示例结束\n 策略模式");
+    id<Strategy> strategy =  [[LargeCustomerStrategy alloc] init];
+    Price *ctx = [[Price alloc] initWithStrategy:strategy];
+
+    double quote = [ctx quote:1000.0];
+    NSLog(@"向客户报价：%lf",quote);
+    NSLog(@"示例结束\n 策略模式");
+
     //解释器模式
     
     //备忘录
-    
-    //策略模式
     
     //访问者模式
 
