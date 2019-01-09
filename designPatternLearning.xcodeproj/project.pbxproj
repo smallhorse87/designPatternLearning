@@ -29,6 +29,8 @@
 		8150F3D521E59C2600222A63 /* PersonalCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3D421E59C2600222A63 /* PersonalCustomer.m */; };
 		8150F3D821E59D3500222A63 /* ServiceRequestVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3D721E59D3500222A63 /* ServiceRequestVisitor.m */; };
 		8150F3DB21E59E4A00222A63 /* PredilectionAnalyzeVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3DA21E59E4A00222A63 /* PredilectionAnalyzeVisitor.m */; };
+		8150F3DF21E5C69600222A63 /* FlowAMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3DE21E5C69600222A63 /* FlowAMock.m */; };
+		8150F3E321E5CA0400222A63 /* FlowAmementoCareTaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3E221E5CA0400222A63 /* FlowAmementoCareTaker.m */; };
 		817C494F21DF0F5E00FDBF6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C494E21DF0F5E00FDBF6C /* AppDelegate.m */; };
 		817C495221DF0F5E00FDBF6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C495121DF0F5E00FDBF6C /* ViewController.m */; };
 		817C495521DF0F5E00FDBF6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817C495321DF0F5E00FDBF6C /* Main.storyboard */; };
@@ -111,6 +113,11 @@
 		8150F3D721E59D3500222A63 /* ServiceRequestVisitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceRequestVisitor.m; sourceTree = "<group>"; };
 		8150F3D921E59E4A00222A63 /* PredilectionAnalyzeVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PredilectionAnalyzeVisitor.h; sourceTree = "<group>"; };
 		8150F3DA21E59E4A00222A63 /* PredilectionAnalyzeVisitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PredilectionAnalyzeVisitor.m; sourceTree = "<group>"; };
+		8150F3DD21E5C69600222A63 /* FlowAMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowAMock.h; sourceTree = "<group>"; };
+		8150F3DE21E5C69600222A63 /* FlowAMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowAMock.m; sourceTree = "<group>"; };
+		8150F3E021E5C82900222A63 /* FlowAMockMemento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowAMockMemento.h; sourceTree = "<group>"; };
+		8150F3E121E5CA0400222A63 /* FlowAmementoCareTaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowAmementoCareTaker.h; sourceTree = "<group>"; };
+		8150F3E221E5CA0400222A63 /* FlowAmementoCareTaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowAmementoCareTaker.m; sourceTree = "<group>"; };
 		817C494A21DF0F5E00FDBF6C /* designPatternLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = designPatternLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		817C494D21DF0F5E00FDBF6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		817C494E21DF0F5E00FDBF6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -276,6 +283,18 @@
 			path = Visitor;
 			sourceTree = "<group>";
 		};
+		8150F3DC21E5C67600222A63 /* Memento */ = {
+			isa = PBXGroup;
+			children = (
+				8150F3DD21E5C69600222A63 /* FlowAMock.h */,
+				8150F3DE21E5C69600222A63 /* FlowAMock.m */,
+				8150F3E021E5C82900222A63 /* FlowAMockMemento.h */,
+				8150F3E121E5CA0400222A63 /* FlowAmementoCareTaker.h */,
+				8150F3E221E5CA0400222A63 /* FlowAmementoCareTaker.m */,
+			);
+			path = Memento;
+			sourceTree = "<group>";
+		};
 		817C494121DF0F5E00FDBF6C = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +314,7 @@
 		817C494C21DF0F5E00FDBF6C /* designPatternLearning */ = {
 			isa = PBXGroup;
 			children = (
+				8150F3DC21E5C67600222A63 /* Memento */,
 				8150F3CB21E59A1400222A63 /* Visitor */,
 				8150F3BD21E587D400222A63 /* Strategy */,
 				812163F521E48050003EE2C1 /* TemplateMethod */,
@@ -502,6 +522,7 @@
 				81A4E49C21E32CC500F8AFB7 /* GroupPrizeDecorator.m in Sources */,
 				817C496E21DF210000FDBF6C /* SimpleFactory.m in Sources */,
 				81A4E48821E31C9200F8AFB7 /* UserModel.m in Sources */,
+				8150F3DF21E5C69600222A63 /* FlowAMock.m in Sources */,
 				8150F3C721E58A3C00222A63 /* LargeCustomerStrategy.m in Sources */,
 				817C495D21DF0F6000FDBF6C /* main.m in Sources */,
 				817C497A21DF2B0600FDBF6C /* ExportDB.m in Sources */,
@@ -520,6 +541,7 @@
 				81A4E48521E31C4C00F8AFB7 /* Proxy.m in Sources */,
 				81A4E46F21E2F01500F8AFB7 /* Schema1.m in Sources */,
 				817C494F21DF0F5E00FDBF6C /* AppDelegate.m in Sources */,
+				8150F3E321E5CA0400222A63 /* FlowAmementoCareTaker.m in Sources */,
 				81A4E48D21E3260C00F8AFB7 /* ConcreteComponent.m in Sources */,
 				817C496721DF101B00FDBF6C /* DirtyWordApi.m in Sources */,
 				8150F3DB21E59E4A00222A63 /* PredilectionAnalyzeVisitor.m in Sources */,

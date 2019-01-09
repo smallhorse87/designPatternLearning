@@ -46,6 +46,9 @@
 #import "ServiceRequestVisitor.h"
 #import "PredilectionAnalyzeVisitor.h"
 
+#import "FlowAMock.h"
+#import "FlowAmementoCareTaker.h"
+
 @interface ViewController ()
 
 @end
@@ -192,9 +195,26 @@
     [cm3 accept:paVisitor];
     NSLog(@"示例结束\n 访问者模式");
     
-    //解释器模式
+    //解释器模式：给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子
+    //本质：分离实现，解释执行
+    //todo
     
-    //备忘录
+    //备忘录：在不b破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样以后就可将该对象恢复到原型保存的状态。
+    NSLog(@"示例开始\n 备忘录");
+    FlowAMock *mock = [[FlowAMock alloc] initWithName:@"TestFlow"];
+    [mock runPhaseOne];
+    
+    FlowAmementoCareTaker *careTaker = [[FlowAmementoCareTaker alloc] init];
+    
+    id<FlowAMockMemento> memento = [mock createMemento];
+    [careTaker saveMemento:memento];
+
+    [mock schema1];
+    
+    [mock setMemento:[careTaker retriveMemento]];
+
+    [mock schema2];
+    NSLog(@"示例结束\n 备忘录");
     
     //职责链模式
     //iOS上响应触摸动作的机制就是职责链模式
