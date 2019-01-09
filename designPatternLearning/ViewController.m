@@ -41,6 +41,11 @@
 #import "LargeCustomerStrategy.h"
 #import "Price.h"
 
+#import "EnterpriseCustomer.h"
+#import "PersonalCustomer.h"
+#import "ServiceRequestVisitor.h"
+#import "PredilectionAnalyzeVisitor.h"
+
 @interface ViewController ()
 
 @end
@@ -164,12 +169,33 @@
     NSLog(@"向客户报价：%lf",quote);
     NSLog(@"示例结束\n 策略模式");
 
+    //访问者模式：表示一个作用于某对象结构中的个元素的操作。它使你可以在不改变各元素的类的前提下定义作用于这些元素的新操作。
+    //本质：
+    NSLog(@"示例开始\n 访问者模式");
+    Customer *cm1 = [[EnterpriseCustomer alloc] init];
+    cm1.name = @"ABC集团";
+
+    Customer *cm2 = [[EnterpriseCustomer alloc] init];
+    cm2.name = @"CDE公司";
+
+    Customer *cm3 = [[PersonalCustomer alloc] init];
+    cm3.name = @"张三";
+    
+    ServiceRequestVisitor *srVisitor = [[ServiceRequestVisitor alloc] init];
+    [cm1 accept:srVisitor];
+    [cm2 accept:srVisitor];
+    [cm3 accept:srVisitor];
+    
+    PredilectionAnalyzeVisitor *paVisitor = [[PredilectionAnalyzeVisitor alloc] init];
+    [cm1 accept:paVisitor];
+    [cm2 accept:paVisitor];
+    [cm3 accept:paVisitor];
+    NSLog(@"示例结束\n 访问者模式");
+    
     //解释器模式
     
     //备忘录
     
-    //访问者模式
-
     //职责链模式
     //iOS上响应触摸动作的机制就是职责链模式
     

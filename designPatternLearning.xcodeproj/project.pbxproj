@@ -24,6 +24,11 @@
 		8150F3C421E5890300222A63 /* OldCustomerStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3C321E5890300222A63 /* OldCustomerStrategy.m */; };
 		8150F3C721E58A3C00222A63 /* LargeCustomerStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3C621E58A3C00222A63 /* LargeCustomerStrategy.m */; };
 		8150F3CA21E58A7F00222A63 /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3C921E58A7F00222A63 /* Price.m */; };
+		8150F3CE21E59A3200222A63 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3CD21E59A3200222A63 /* Customer.m */; };
+		8150F3D221E59B4500222A63 /* EnterpriseCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3D121E59B4500222A63 /* EnterpriseCustomer.m */; };
+		8150F3D521E59C2600222A63 /* PersonalCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3D421E59C2600222A63 /* PersonalCustomer.m */; };
+		8150F3D821E59D3500222A63 /* ServiceRequestVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3D721E59D3500222A63 /* ServiceRequestVisitor.m */; };
+		8150F3DB21E59E4A00222A63 /* PredilectionAnalyzeVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8150F3DA21E59E4A00222A63 /* PredilectionAnalyzeVisitor.m */; };
 		817C494F21DF0F5E00FDBF6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C494E21DF0F5E00FDBF6C /* AppDelegate.m */; };
 		817C495221DF0F5E00FDBF6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C495121DF0F5E00FDBF6C /* ViewController.m */; };
 		817C495521DF0F5E00FDBF6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817C495321DF0F5E00FDBF6C /* Main.storyboard */; };
@@ -95,6 +100,17 @@
 		8150F3C621E58A3C00222A63 /* LargeCustomerStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LargeCustomerStrategy.m; sourceTree = "<group>"; };
 		8150F3C821E58A7F00222A63 /* Price.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Price.h; sourceTree = "<group>"; };
 		8150F3C921E58A7F00222A63 /* Price.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
+		8150F3CC21E59A3200222A63 /* Customer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
+		8150F3CD21E59A3200222A63 /* Customer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Customer.m; sourceTree = "<group>"; };
+		8150F3CF21E59A8500222A63 /* Visitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Visitor.h; sourceTree = "<group>"; };
+		8150F3D021E59B4500222A63 /* EnterpriseCustomer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnterpriseCustomer.h; sourceTree = "<group>"; };
+		8150F3D121E59B4500222A63 /* EnterpriseCustomer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnterpriseCustomer.m; sourceTree = "<group>"; };
+		8150F3D321E59C2600222A63 /* PersonalCustomer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalCustomer.h; sourceTree = "<group>"; };
+		8150F3D421E59C2600222A63 /* PersonalCustomer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalCustomer.m; sourceTree = "<group>"; };
+		8150F3D621E59D3500222A63 /* ServiceRequestVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceRequestVisitor.h; sourceTree = "<group>"; };
+		8150F3D721E59D3500222A63 /* ServiceRequestVisitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceRequestVisitor.m; sourceTree = "<group>"; };
+		8150F3D921E59E4A00222A63 /* PredilectionAnalyzeVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PredilectionAnalyzeVisitor.h; sourceTree = "<group>"; };
+		8150F3DA21E59E4A00222A63 /* PredilectionAnalyzeVisitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PredilectionAnalyzeVisitor.m; sourceTree = "<group>"; };
 		817C494A21DF0F5E00FDBF6C /* designPatternLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = designPatternLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		817C494D21DF0F5E00FDBF6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		817C494E21DF0F5E00FDBF6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -242,6 +258,24 @@
 			path = Strategy;
 			sourceTree = "<group>";
 		};
+		8150F3CB21E59A1400222A63 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				8150F3CC21E59A3200222A63 /* Customer.h */,
+				8150F3CD21E59A3200222A63 /* Customer.m */,
+				8150F3CF21E59A8500222A63 /* Visitor.h */,
+				8150F3D021E59B4500222A63 /* EnterpriseCustomer.h */,
+				8150F3D121E59B4500222A63 /* EnterpriseCustomer.m */,
+				8150F3D321E59C2600222A63 /* PersonalCustomer.h */,
+				8150F3D421E59C2600222A63 /* PersonalCustomer.m */,
+				8150F3D621E59D3500222A63 /* ServiceRequestVisitor.h */,
+				8150F3D721E59D3500222A63 /* ServiceRequestVisitor.m */,
+				8150F3D921E59E4A00222A63 /* PredilectionAnalyzeVisitor.h */,
+				8150F3DA21E59E4A00222A63 /* PredilectionAnalyzeVisitor.m */,
+			);
+			path = Visitor;
+			sourceTree = "<group>";
+		};
 		817C494121DF0F5E00FDBF6C = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +295,7 @@
 		817C494C21DF0F5E00FDBF6C /* designPatternLearning */ = {
 			isa = PBXGroup;
 			children = (
+				8150F3CB21E59A1400222A63 /* Visitor */,
 				8150F3BD21E587D400222A63 /* Strategy */,
 				812163F521E48050003EE2C1 /* TemplateMethod */,
 				812163E621E467ED003EE2C1 /* Command */,
@@ -462,6 +497,7 @@
 				812163FE21E482FF003EE2C1 /* NormalLogin.m in Sources */,
 				81A4E49621E32B7E00F8AFB7 /* TempDB.m in Sources */,
 				817C498321DF353A00FDBF6C /* ExportOperate.m in Sources */,
+				8150F3D821E59D3500222A63 /* ServiceRequestVisitor.m in Sources */,
 				817C495221DF0F5E00FDBF6C /* ViewController.m in Sources */,
 				81A4E49C21E32CC500F8AFB7 /* GroupPrizeDecorator.m in Sources */,
 				817C496E21DF210000FDBF6C /* SimpleFactory.m in Sources */,
@@ -469,6 +505,9 @@
 				8150F3C721E58A3C00222A63 /* LargeCustomerStrategy.m in Sources */,
 				817C495D21DF0F6000FDBF6C /* main.m in Sources */,
 				817C497A21DF2B0600FDBF6C /* ExportDB.m in Sources */,
+				8150F3CE21E59A3200222A63 /* Customer.m in Sources */,
+				8150F3D221E59B4500222A63 /* EnterpriseCustomer.m in Sources */,
+				8150F3D521E59C2600222A63 /* PersonalCustomer.m in Sources */,
 				812163F421E476CF003EE2C1 /* ResetCommand.m in Sources */,
 				81A4E47E21E318CD00F8AFB7 /* Facade.m in Sources */,
 				043D098D21E08CBF00235CED /* ExportFooterModel.m in Sources */,
@@ -483,6 +522,7 @@
 				817C494F21DF0F5E00FDBF6C /* AppDelegate.m in Sources */,
 				81A4E48D21E3260C00F8AFB7 /* ConcreteComponent.m in Sources */,
 				817C496721DF101B00FDBF6C /* DirtyWordApi.m in Sources */,
+				8150F3DB21E59E4A00222A63 /* PredilectionAnalyzeVisitor.m in Sources */,
 				81A4E48221E31BD300F8AFB7 /* UserModelApi.m in Sources */,
 				81A4E46221E2E72300F8AFB7 /* TxtBuilder.m in Sources */,
 				8150F3C121E5887400222A63 /* NormalCustomerStrategy.m in Sources */,
